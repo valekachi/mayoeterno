@@ -1,11 +1,1 @@
-.titulo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.barraNav {
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Devanagari:wght@100&display=swap');

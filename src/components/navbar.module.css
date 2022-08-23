@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Devanagari:ght@100&display=swap');
+.cabecera {
+    background-color: #bad0c7;
+    padding: 1vh;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'IBM Plex Sans Devanagari', sans-serif;
+    color: #966d7c;
+    font-size: 25px;
+}
+
+.barraNav {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    font-family: 'IBM Plex Sans Devanagari', sans-serif;
+    background-color: #bad0c7;
+    color:#f1f6f4;
+}
+
+
+    
+    

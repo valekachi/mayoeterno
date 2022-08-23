@@ -1,20 +1,28 @@
+import estilos from './navbar.module.css';
+import CartWidget from './CartWidget';
+
 const NavBar = () => {
     return (
-        <header>
-          <h1 className="titulo">MAYO ETERNO | JABONES ARTESANALES </h1>
+        <header className={estilos.cabecera}>
+          <h1 className={estilos.titulo}>MAYO ETERNO | JABONES ARTESANALES </h1>
         <nav>
-          <ul className="barraNav">
+          <ul className={estilos.barraNav}>
             <li>
-              <a href="">INICIO</a>
+              <a href="https://www.google.com/?hl=es">INICIO</a>
               </li>
             <li>
-            <a href="">CATALOGO</a>
+            <a href="https://www.google.com/?hl=es">CATALOGO</a>
             </li>
             <li>
-            <a href="">CONTACTO</a>
+            <a href="https://www.google.com/?hl=es">SOBRE NOSOTRAS</a>
+            </li>
+            <li>
+            <a href="https://www.google.com/?hl=es">CONTACTO</a>
             </li>
           </ul>
+          <CartWidget />
         </nav>
+        
        </header>
     );
 };
