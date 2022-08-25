@@ -2,7 +2,6 @@ import React from 'react'
 
 const ItemListContainer = (saludo) => {
 
-    console.log(saludo.prueba);
   return (
     <div>
         <h2>Bienvenidos/as a MAYO ETERNO, emprendimiento de {saludo.rubro}</h2>

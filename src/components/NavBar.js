@@ -6,6 +6,7 @@ const NavBar = () => {
         <header className={estilos.cabecera}>
           <h1 className={estilos.titulo}>MAYO ETERNO | JABONES ARTESANALES </h1>
         <nav>
+          <CartWidget />
           <ul className={estilos.barraNav}>
             <li>
               <a href="https://www.google.com/?hl=es">INICIO</a>
@@ -20,7 +21,7 @@ const NavBar = () => {
             <a href="https://www.google.com/?hl=es">CONTACTO</a>
             </li>
           </ul>
-          <CartWidget />
+          
         </nav>
         
        </header>

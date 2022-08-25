@@ -17,11 +17,20 @@
     display: flex;
     justify-content: space-evenly;
     list-style: none;
+    text-decoration: none;
     font-family: 'IBM Plex Sans Devanagari', sans-serif;
     background-color: #bad0c7;
-    color:#f1f6f4;
+    color: black;
 }
-
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    background-color: black;
+    color:#bad0c7;
+    padding: 3px;
+}
 
     
     
