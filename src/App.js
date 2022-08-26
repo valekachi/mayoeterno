@@ -2,13 +2,19 @@ import './App.css';
 import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
 import ItemCount from './components/ItemCount';
+import CartWidget from './components/CartWidget';
 
 
-function App() {
+
+const App = () => { 
+  const onAdd = (parametro) => {
+    console.log("Agregado al carrito")
+  };
   return (
     <>
     <NavBar />
-    <ItemCount />
+    <CartWidget />
+    <ItemCount stock = {10} initial = {1} onAdd = {onAdd} />
      <ItemListContainer
      rubro = "Cosmética"
      pais = "Uruguay"
@@ -17,6 +23,6 @@ function App() {
      <footer></footer>
        
     </>
-  );
-}
-export default App;
+);
+};
+export default App

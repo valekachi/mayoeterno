@@ -1,23 +1,23 @@
 import React, { useState } from 'react'
 
-const ItemCount = () => {
-        const [count, setCount] = useState(1);
 
-        let tope = 15
-        const suma = () => {
-            count < tope ?  setCount(count + 1) : alert("Has llegado a la maxima capacidad del carrito")
-        }
+const ItemCount = ({stock, onAdd}) => {
+  const [count, setCount] = useState(1);
 
-        const resta = () => {
-          setCount(count - 1); }
-  return (
-    <div>
-        <button onClick={suma}>+</button>
-        <button onClick={resta} disabled={count === 1}>-</button>
-        <button>Agregar a mi carrito</button>
-        <p>Contador: {count} </p>
+  const suma = () => {
+      count < stock ?  setCount(count + 1) : alert("Has llegado a la maxima capacidad del carrito")
+  }
 
-    </div>
-  )
+  const resta = () => {
+    setCount(count - 1); }
+                    return (
+<div>
+  <button onClick={suma}>+</button>
+  <button onClick={resta} disabled={count === 1}>-</button>
+  <button onClick={onAdd}>Agregar a mi carrito</button>
+  <p>Contador: {count} </p>
+
+</div>
+)
 }
-export default ItemCount
+export default ItemCount;
