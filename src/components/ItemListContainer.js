@@ -1,14 +1,36 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { productos } from '../mock/products';
+import ItemList from './ItemList';
 
-const ItemListContainer = (saludo) => {
+
+const ItemListContainer = () => {
+  const [items, setIems] = useState([])
+  
+  
+useEffect(() => {
+  const obtenerProd = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(productos)
+    }, 2000);
+    
+  });
+  obtenerProd
+  .then((data) => {
+    setIems(data)
+  })
+  .catch((err) => {
+    console.log('catch', err)
+  })
+  .finally(() => {
+    console.log('Finally')
+  })
+}, []);
 
   return (
-    <div>
-        <h2>Bienvenidos/as a MAYO ETERNO, emprendimiento de {saludo.rubro}</h2>
-        <p>Mayo Eterno fue creado por {saludo.datos.nombre}, en {saludo.pais}, inspirada por las poesías que su madre le recitaba. Luego de trabajar muchos años como {saludo.datos.ocupacion}, a modo de entretenimiento, decidió empezar a hacer jabones con sus nietas y su hija menor. </p>
-    </div>
-  )
-}
+      <ItemList items={items}/>
+    );
+};
+
 
 export default ItemListContainer;
 

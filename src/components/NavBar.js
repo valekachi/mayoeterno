@@ -1,4 +1,6 @@
 import estilos from './navbar.module.css';
+import CartWidget from './CartWidget';
+
 
 
 const NavBar = () => {
@@ -20,7 +22,7 @@ const NavBar = () => {
             <a href="https://www.google.com/?hl=es">CONTACTO</a>
             </li>
           </ul>
-          
+          <CartWidget />
         </nav>
         
        </header>

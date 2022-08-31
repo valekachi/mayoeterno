@@ -10,4 +10,4 @@ shopping_cart
   )
 }
 
-export default CartWidget
+export default CartWidget;
