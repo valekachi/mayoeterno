@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import estilos from './itemcount.module.css'
 
 
 const ItemCount = ({stock, onAdd}) => {
@@ -11,11 +12,12 @@ const ItemCount = ({stock, onAdd}) => {
   const resta = () => {
     setCount(count - 1); }
                     return (
-<div>
-  <button onClick={suma}>+</button>
-  <button onClick={resta} disabled={count === 1}>-</button>
-  <button onClick={onAdd}>Agregar a mi carrito</button>
-  <p>Contador: {count} </p>
+<div className={estilos.contador}>
+  <button onClick={suma} className={estilos.btn}>+</button>
+  <p className={estilos.btn}>{count} </p>
+  <button onClick={resta} className={estilos.btn} disabled={count === 1}>-</button>
+  <button onClick={onAdd} className={estilos.btn}>Agregar a mi carrito</button>
+  
 
 </div>
 )

@@ -22,5 +22,29 @@ export const productos = [
         stock: 15,
         category: "Jabones",
         img: 'https://cdn.shopify.com/s/files/1/2395/7673/files/soap-recipe-2_480x480.jpg?v=1656498002'
+    },
+    {
+    id: 1,
+    title: "Jabón de avena",
+    price: 230,
+    stock: 15,
+    category: "Jabones",
+    img: 'https://cdn.shopify.com/s/files/1/2395/7673/files/soap-recipe-2_480x480.jpg?v=1656498002'
+    },
+    {
+        id: 1,
+        title: "Jabón de avena",
+        price: 230,
+        stock: 15,
+        category: "Jabones",
+        img: 'https://cdn.shopify.com/s/files/1/2395/7673/files/soap-recipe-2_480x480.jpg?v=1656498002'
+    },
+    {
+        id: 1,
+        title: "Jabón de avena",
+        price: 230,
+        stock: 15,
+        category: "Jabones",
+        img: 'https://cdn.shopify.com/s/files/1/2395/7673/files/soap-recipe-2_480x480.jpg?v=1656498002'
     }
 ]

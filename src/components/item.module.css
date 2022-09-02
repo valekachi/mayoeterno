@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Devanagari:ght@100&display=swap');
+
+.card {
+    border: #bad0c7 solid 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: auto;
+    margin: 5px;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'IBM Plex Sans Devanagari', sans-serif;
+    color: #966d7c;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.fotoProducto {
+    width: 360px;
+    padding: 5px;
+}
