@@ -10,7 +10,7 @@ const ItemDetail = ({items}) => {
         <ul className={estilos.datosDetalle}>
         <li><p>{items.title}</p></li>
         <li><p>Precio: ${items.price}.-</p></li>
-        <li><p>Categoria:{items.category}</p></li>
+        <li><p>Categoria: {items.category}</p></li>
         <li><p>Stock:{items.stock}</p></li>
         </ul>
         <ItemCount />
