@@ -1,25 +1,19 @@
 import './App.css';
 import NavBar from './components/NavBar';
-import ItemListContainer from './components/ItemListContainer';
+import Main from './components/Main';
 import ItemCount from './components/ItemCount';
-import ItemDetailContainer from './components/ItemDetailContainer';
-
-
-
+import { BrowserRouter} from 'react-router-dom';
 
 const App = () => { 
   const onAdd = (parametro) => {
     console.log("Agregado al carrito")
   };
   return (
-    <>
+    <BrowserRouter>
     <NavBar />
     <ItemCount stock = {10} initial = {1} onAdd = {onAdd} />
-     <ItemListContainer/>
-     <ItemDetailContainer />
-     <footer></footer>
-       
-    </>
+    <Main />
+    </BrowserRouter>
 );
 };
-export default App
+export default App;

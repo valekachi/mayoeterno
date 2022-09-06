@@ -40,3 +40,8 @@
     flex-direction: column;
     list-style-type: none;
 }
+.fotoProductoMod {
+    width: 540px;
+    height: 360px;
+    padding: 4px;
+}

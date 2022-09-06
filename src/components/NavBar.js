@@ -1,29 +1,24 @@
+import React from 'react';
 import estilos from './navbar.module.css';
 import CartWidget from './CartWidget';
+import { Link, NavLink } from 'react-router-dom';
 
 
 
 const NavBar = () => {
     return (
         <header className={estilos.cabecera}>
-          <h1 className={estilos.titulo}>MAYO ETERNO | JABONES ARTESANALES </h1>
+          <Link to="/"><h1 className={estilos.titulo}>MAYO ETERNO | JABONES ARTESANALES </h1></Link>
+          <Link to='/cart'>
+            <CartWidget />
+          </Link>  
         <nav>
-          <CartWidget />
           <ul className={estilos.barraNav}>
-            <li>
-              <a href="https://www.google.com/?hl=es">INICIO</a>
-              </li>
-            <li>
-            <a href="https://www.google.com/?hl=es">CATALOGO</a>
-            </li>
-            <li>
-            <a href="https://www.google.com/?hl=es">CONTACTO</a>
-            </li>
-            <li>
-            
-            </li>
+          <NavLink to="/category/jabones">Jabones</NavLink>
+          <Link to="/category/cremas">Cremas</Link>
+          <Link to="/category/aceites">Aceites Corporales</Link>
           </ul>
-         
+          
         </nav>
         
        </header>

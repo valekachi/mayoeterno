@@ -24,6 +24,7 @@
     background-color: #bad0c7;
     color: black;
 }
+
 ul {
     display: flex;
     flex-direction: row;
@@ -35,11 +36,7 @@ a {
     color: black;
     padding: 10px;
 }
-a:hover {
-    background-color: black;
-    color:#bad0c7;
-    padding: 10px;
-}
+
 
 .elCarrito {
 
