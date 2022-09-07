@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Devanagari:ght@100&display=swap');
 .cabecera {
     background-color: #bad0c7;
-    padding: 1vh;
 }
 
 .titulo {
@@ -11,6 +10,7 @@
     font-family: 'IBM Plex Sans Devanagari', sans-serif;
     color: #966d7c;
     font-size: 27px;
+    margin: 0px;
 }
 
 .barraNav {
@@ -18,7 +18,7 @@
     justify-content: flex-start;
     flex-direction:  row;
     list-style: none;
-    padding-left: 25px;
+    padding-left: 5px;
     text-decoration: none;
     font-family: 'IBM Plex Sans Devanagari', sans-serif;
     background-color: #bad0c7;
@@ -29,21 +29,21 @@ ul {
     display: flex;
     flex-direction: row;
     font-size: 20px;
-    margin-bottom: 10px;
 }
 a {
     text-decoration: none;
     color: black;
-    padding: 10px;
+    padding: 5px;
 }
 
 
 .elCarrito {
-
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     color:#966d7c;
+    text-decoration: none;
+    border:#bad0c7 2px solid;
 }
 
-    
+

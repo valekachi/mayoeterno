@@ -4,7 +4,7 @@
     border: #bad0c7 solid 2px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content:space-evenly;
     flex-wrap: wrap;
     width: auto;
     margin: 5px;
@@ -44,4 +44,11 @@
     width: 540px;
     height: 360px;
     padding: 4px;
+}
+
+.irCarrito {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    bottom: 7px;
 }
