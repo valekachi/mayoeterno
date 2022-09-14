@@ -6,14 +6,14 @@ import  CartProvider  from './context/CartContext';
 
 
 const App = () => { 
-
   return (
-    <CartProvider>
     <BrowserRouter>
-    <NavBar />
-    <Main />
-    </BrowserRouter>
+    <NavBar /> 
+    <CartProvider>
+          <Main />  
     </CartProvider>
+    </BrowserRouter>
+  
 );
 };
 export default App;
