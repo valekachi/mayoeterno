@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import ItemDetailContainer from './ItemDetailContainer';
 import ItemListContainer from './ItemListContainer';
 import estilos from './item.module.css';
+import Cart from './Cart';
 
 const Main = () => {
 return (
@@ -19,6 +20,10 @@ return (
                 <Route
                     path="/detail/:idProd"
                     element={<ItemDetailContainer />}
+                />    
+                <Route
+                    path="/cart" 
+                    element={<Cart />} 
                 />
             </Routes>
         </main>

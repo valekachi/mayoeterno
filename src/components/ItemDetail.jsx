@@ -3,15 +3,19 @@ import { useState } from 'react'
 import estilos from './item.module.css'
 import ItemCount from './ItemCount'
 import { Link } from 'react-router-dom'
+import { useContext } from 'react'
+import { CartContext } from '../context/CartContext'
 
 
 
 const ItemDetail = ({items}) => {
 
   const [cantidad, setCantidad] = useState(0); 
+  const {addToCart} = useContext(CartContext);
 
-  const onAdd = (argumento) => {
-    setCantidad(argumento);
+    const onAdd = (cantidadItem) => {
+    setCantidad(cantidadItem);
+    addToCart({...items, cantidadItem});
   }
 
   return (
@@ -22,14 +26,14 @@ const ItemDetail = ({items}) => {
         <li><p>Precio: ${items.price}.-</p></li>
         <li><p>Categoria: {items.category}</p></li>
         <li><p>Stock:{items.stock}</p></li>
-        </ul>
+        <li>
       {cantidad === 0 ? (
        <ItemCount stock={items.stock} initial={1} onAdd={onAdd}/> ) :
-       (  <Link to="/cart">
-        <h3>Cantidad:: {cantidad}</h3>
-        <h1> IR AL CARRITO</h1>
+       (  <Link to="/cart"><h2>Ir al Carrito</h2>
           </Link>
         )}
+        </li>
+        </ul>
       </div>
     
   )}

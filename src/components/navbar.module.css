@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Devanagari:ght@100&display=swap');
+
 .cabecera {
     background-color: #bad0c7;
 }
@@ -35,7 +36,6 @@ a {
     color: black;
     padding: 5px;
 }
-
 
 .elCarrito {
     display: flex;
