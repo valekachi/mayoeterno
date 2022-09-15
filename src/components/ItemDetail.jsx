@@ -15,7 +15,7 @@ const ItemDetail = ({items}) => {
 
     const onAdd = (cantidadItem) => {
     setCantidad(cantidadItem);
-    addToCart({...items, cantidadItem});
+    addToCart(items, cantidadItem);
   }
 
   return (
@@ -29,7 +29,7 @@ const ItemDetail = ({items}) => {
         <li>
       {cantidad === 0 ? (
        <ItemCount stock={items.stock} initial={1} onAdd={onAdd}/> ) :
-       (  <Link to="/cart"><h2>Ir al Carrito</h2>
+       (  <Link to="/cart"><h2 className={estilos.irAlCarrito}>Ir al Carrito</h2>
           </Link>
         )}
         </li>

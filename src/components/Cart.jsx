@@ -12,13 +12,15 @@ const Cart = () => {
       {cart.map((prod) => (
         <div key={prod.id}>
           <h2>{prod.title}</h2>
+          <p>Cantidad: {prod.cantidad}</p>
           <img src={prod.img} alt="Producto en tu carrito" className={estilo.fotoProducto} />
           <button onClick={() => eliminarProd(prod.id)} className={estilos.btn}>
             Eliminar Producto
           </button>
-          <button onClick={clearCart} className={estilos.btn}>Clear Cart</button>
+         
         </div>
       ))}
+       <button onClick={clearCart} className={estilos.btn}>Clear Cart</button>
     </div>
   );
 };

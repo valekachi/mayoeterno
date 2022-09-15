@@ -3,8 +3,6 @@ import { productos } from '../mock/products';
 import ItemList from './ItemList';
 import { useParams } from 'react-router-dom';
 
-
-
 const ItemListContainer = () => {
   const [items, setIems] = useState([])
   

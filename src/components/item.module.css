@@ -22,7 +22,6 @@
     height: 270px;
 }
 .vistaDetalle {
-    border: #bad0c7 solid 2px;
     display: flex;
     margin: 5px;
     padding: 2px;
@@ -41,8 +40,8 @@
     list-style-type: none;
 }
 .fotoProductoMod {
-    width: 540px;
-    height: 360px;
+    width: 450px;
+    height: 270px;
     padding: 4px;
 }
 
@@ -51,4 +50,13 @@
     justify-content: center;
     align-items: flex-end;
     bottom: 7px;
+}
+
+.inCart {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border:#966d7c 1px solid;
 }
