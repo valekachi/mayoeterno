@@ -1,11 +1,15 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import estilos from './itemcount.module.css'
 
 
 
-const ItemCount = ({stock, onAdd}) => {
+const ItemCount = ({stock, onAdd, initial = 1}) => {
   const [count, setCount] = useState(1);
 
+  useEffect(() => {
+    setCount(initial);
+}, [initial])
+  
   const suma = () => {
       count < stock ?  setCount(count + 1) : alert("Has llegado a la maxima capacidad del carrito")
   }
@@ -17,7 +21,7 @@ const ItemCount = ({stock, onAdd}) => {
       onAdd(count);
   };
 
-                    return (
+  return (
 <div className={estilos.contador}>
   <button onClick={suma} className={estilos.btn}>+</button>
   <p className={estilos.btn}>{count} </p>

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Devanagari:ght@100&display=swap');
 
 .card {
-    border: #bad0c7 solid 2px;
+    border: solid 2px;
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;

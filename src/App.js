@@ -8,8 +8,8 @@ import  CartProvider  from './context/CartContext';
 const App = () => { 
   return (
     <BrowserRouter>
-    <NavBar /> 
     <CartProvider>
+          <NavBar /> 
           <Main />  
     </CartProvider>
     </BrowserRouter>
