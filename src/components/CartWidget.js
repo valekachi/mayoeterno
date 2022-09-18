@@ -4,7 +4,7 @@ import { CartContext } from "../context/CartContext";
 
 const CartWidget = () => {
   const { totalQuantity } = useContext(CartContext);
-  
+  if (totalQuantity() !== 0) {
 
   return (
     <div className={estilos.elCarrito}>
@@ -12,6 +12,6 @@ const CartWidget = () => {
       {totalQuantity() === 0 ? <></> : <span>{totalQuantity()}</span>}
     </div>
   );
-};
+}};
 
 export default CartWidget;
