@@ -37,7 +37,7 @@ const ItemListContainer = () => {
     <div>
       {cargando ? (
         <>
-          <GridLoader color="#bad0c7" size="50px" />
+          <GridLoader color="#bad0c7" size="15px" />
         </>
       ) : (
         <>

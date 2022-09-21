@@ -43,7 +43,7 @@ const Cart = () => {
       <button onClick={clearCart} className={estilos.btn}>
         Limpiar mi carrito
       </button>
-      <h1>Total de unidades: {totalQuantity()}</h1>
+      <h1>Total de unidades: ${totalQuantity()}</h1>
       <h1>Total: ${totalPrice()}</h1>
     </div>
   );
