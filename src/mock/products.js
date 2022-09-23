@@ -25,7 +25,7 @@ export const productos = [
     },
     {
     id: 4,
-    title: "Jabón de lavanda",
+    title: "    ",
     price: 180,
     stock: 15,
     category: "jabones",

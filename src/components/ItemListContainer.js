@@ -12,10 +12,15 @@ const ItemListContainer = () => {
   const { categoryName } = useParams();
 
   useEffect(() => {
-    
+      setCargando(true);
     const itemCollection = collection(db, "productos");
-    const filtrados = categoryName ? (query(itemCollection, where("category", "==", categoryName))) : itemCollection; 
-    getDocs(filtrados)
+    const referencia = categoryName 
+    ? (query(itemCollection, where("category", "==", categoryName))) 
+    : itemCollection; 
+    
+    
+    
+    getDocs(referencia)
       .then((res) => {
         const products = res.docs.map((prod) => {
           return {
@@ -50,25 +55,3 @@ const ItemListContainer = () => {
 
 export default ItemListContainer;
 
-// const getProducts = () =>
-//       new Promise((res, rej) => {
-//         const prodFiltrados = productos.filter(
-//           (prod) => prod.category === categoryName
-//         );
-//         setTimeout(() => {
-//           res(categoryName ? prodFiltrados : productos);
-//         }, 500);
-//       });
-
-//     getProducts()
-//       .then((data) => {
-//         setIems(data);
-//         setCargando(false);
-//       })
-//       .catch((error) => {
-//         console.log(error);
-//       });
-//     return () => {
-//       setCargando(true);
-//     };
-//   },

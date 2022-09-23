@@ -4,7 +4,9 @@ import ItemDetail from "./ItemDetail";
 import { GridLoader } from "react-spinners";
 import { db } from "../firebaseConfig";
 import {getDoc, doc, collection} from "firebase/firestore"
-const ItemDetailContainer = ({ item }) => {
+
+
+const ItemDetailContainer = () => {
   const [items, setIems] = useState({});
   const [cargando, setCargando] = useState(true);
   const { idProd } = useParams();
@@ -31,7 +33,7 @@ const ItemDetailContainer = ({ item }) => {
     <div>
       {cargando ? (
         <>
-          <GridLoader color="#bad0c7" size="70px" />
+          <GridLoader color="#ba d0c7" size="70px" />
         </>
       ) : (
         <ItemDetail items={items} />
@@ -41,18 +43,3 @@ const ItemDetailContainer = ({ item }) => {
 };
 
 export default ItemDetailContainer;
-
-// const getItem = new Promise((resolve, reject) => {
-//   const prod = productos.find((prod) => prod.id === Number(idProd));
-//   setTimeout(() => {
-//     resolve(idProd ? prod : productos);
-//   }, 2000);
-// });
-// getItem
-//   .then((resolve) => setIems(resolve))
-//   .catch((err) => {
-//     console.log("catch", err);
-//   })
-//   .finally(() => {
-//     setCargando(false);
-//   });
