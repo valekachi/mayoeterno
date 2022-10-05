@@ -26,3 +26,6 @@ Mayo Eterno se trata de un pequeño emprendimiento familiar en el que vendemos p
  npm start
  ```
 
+# DEPLOY DEL SITIO EN NETLIFY: 
+
+[Mayo Eterno](https://mayoeterno.netlify.app/)
