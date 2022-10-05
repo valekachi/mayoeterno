@@ -6,7 +6,6 @@ export const CartContext = createContext();
 const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
 
-
   const addToCart = (item, cantidad) => {
     if (isInCart(item.id)) {
       sumarCantidad(item, cantidad);
@@ -56,17 +55,16 @@ const CartProvider = ({ children }) => {
   const totalQuantity = () => {
     let acumulador = 0;
     cart.forEach((prod) => {
-        acumulador += prod.cantidad;
+      acumulador += prod.cantidad;
     });
-    return(acumulador);
-};  
-
+    return acumulador;
+  };
 
   const getProductQuantity = (id) => {
     const product = cart.find((prod) => prod.id === id);
     return product?.cantidad;
   };
-  
+
   return (
     <CartContext.Provider
       value={{

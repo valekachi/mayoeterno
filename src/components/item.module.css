@@ -1,62 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Devanagari:ght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Devanagari:ght@100&display=swap");
 
 .card {
-   
-    display: flex;
-    flex-direction: row;
-    justify-content:space-evenly;
-    flex-wrap: wrap;
-    width: auto;
-    margin: 5px;
-    padding: 2px;
-    font-family: 'IBM Plex Sans Devanagari', sans-serif;
-    color: #966d7c;
-    font-size: 20px;
-    text-align: center;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: auto;
+  margin: 5px;
+  padding: 2px;
+  font-family: "IBM Plex Sans Devanagari", sans-serif;
+  color: #966d7c;
+  font-size: 20px;
+  text-align: center;
 }
 
 .fotoProducto {
-    width: 360px;
-    padding: 7px;
-    height: 270px;
+  width: 360px;
+  padding: 7px;
+  height: 270px;
 }
 .vistaDetalle {
-    display: flex;
-    margin: 5px;
-    padding: 2px;
-    font-family: 'IBM Plex Sans Devanagari', sans-serif;
-    color: #966d7c;
-    font-size: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  margin: 5px;
+  padding: 2px;
+  font-family: "IBM Plex Sans Devanagari", sans-serif;
+  color: #966d7c;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .datosDetalle {
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
 }
 .fotoProductoMod {
-    width: 450px;
-    height: 270px;
-    padding: 4px;
+  width: 450px;
+  height: 270px;
+  padding: 4px;
 }
 
 .irCarrito {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    bottom: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  bottom: 7px;
 }
 
 .inCart {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    border:#966d7c 1px solid;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border: #966d7c 1px solid;
 }

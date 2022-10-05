@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Devanagari:ght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Devanagari:ght@100&display=swap");
 
 .contador {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
 }
 
 .btn {
-    padding: 7px;
-    margin: 3px;
-    background-color:  #bad0c7;
-    border-radius: 3px;
-    font-family: 'IBM Plex Sans Devanagari', sans-serif;
+  padding: 7px;
+  margin: 3px;
+  background-color: #bad0c7;
+  border-radius: 3px;
+  font-family: "IBM Plex Sans Devanagari", sans-serif;
 }
