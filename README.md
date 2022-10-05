@@ -5,11 +5,11 @@ Mayo Eterno se trata de un pequeño emprendimiento familiar en el que vendemos p
 
 ### Librerias usadas: 
 
-[REACT ROUTER DOM](https://reactrouter.com/en/main)
+- [REACT ROUTER DOM](https://reactrouter.com/en/main)
 
-[REACT SPINNER](https://www.davidhu.io/react-spinners/)
+- [REACT SPINNER](https://www.davidhu.io/react-spinners/)
 
-[FIREBASE](https://firebase.google.com/?hl=es-419&gclid=CjwKCAjwpqCZBhAbEiwAa7pXedRD0y2I31szPG0AjybUAVQ07OvFhILNl0DF3Oh3kBQmgQySXiRFcBoCff8QAvD_BwE&gclsrc=aw.ds)
+- [FIREBASE](https://firebase.google.com/?hl=es-419&gclid=CjwKCAjwpqCZBhAbEiwAa7pXedRD0y2I31szPG0AjybUAVQ07OvFhILNl0DF3Oh3kBQmgQySXiRFcBoCff8QAvD_BwE&gclsrc=aw.ds)
 
 ## Pasos para levantar el proyecto localmente
 
