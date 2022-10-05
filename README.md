@@ -13,10 +13,16 @@ Mayo Eterno se trata de un pequeño emprendimiento familiar en el que vendemos p
 
 ## Pasos para levantar el proyecto localmente
 
-### ```git clone https://github.com/valekachi/mayoeterno.git```
+ ```
+ git clone https://github.com/valekachi/mayoeterno.git
+ ```
 
-### ```npm stall```
+ ```
+ npm stall
+ ```
 
 
-### ```npm start```
+ ```
+ npm start
+ ```
 
